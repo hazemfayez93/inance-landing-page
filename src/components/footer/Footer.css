@@ -1,0 +1,154 @@
+.footer-section {
+  padding: 75px 0;
+  background-color: #0a0f43;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer-heading {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+}
+
+.info-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+.info-container {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-items-container {
+  position: relative;
+}
+
+.info-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+.info-items::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 75%;
+  height: 1px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info-item {
+  z-index: 1;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.info-item a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 80px;
+  background-color: #0355cc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image:hover {
+  background-color: #ff8a1d;
+}
+
+.item-image img {
+  width: 25px;
+  height: 25px;
+}
+
+.item p {
+  margin-top: 25px;
+  color: #fff;
+  margin-bottom: 0;
+  background-color: #0a0f43;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+
+.social-box {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-container {
+  background-color: #fff;
+  padding: 5px 15px;
+}
+
+.social-link {
+  margin: 0 5px;
+}
+.social-link img {
+  width: 18px;
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    max-width: 720px;
+  }
+  .info-items::before {
+    width: 1px;
+    height: 90%;
+    top: 25px;
+  }
+  .info-item {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+}

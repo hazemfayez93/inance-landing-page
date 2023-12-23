@@ -1,0 +1,146 @@
+.services-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.services-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.services-header h2 {
+  margin-bottom: 8px;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  flex: 0 0 30%;
+  max-width: 30%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+}
+
+.service-box:hover {
+  background-color: #fd7e14;
+  color: #fff;
+}
+
+.service {
+  padding: 25px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service-image {
+  width: 65px;
+  height: 65px;
+}
+
+.service-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.service-content {
+  margin-top: 15px;
+}
+
+.service-content h5 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: Lato, sans-serif;
+}
+
+.service-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: lato, sans-serif;
+  line-height: 1.5;
+}
+
+.services-button {
+  cursor: pointer;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.services-button button {
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  background-color: #0355cc;
+  border: 1px solid #0355cc;
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .services-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  .services-container {
+    max-width: 720px;
+  }
+  .service-box {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  /* .services-image-box {
+      flex: 0 0 50%;
+      max-width: 50%;
+    } */
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    max-width: 540px;
+  }
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
